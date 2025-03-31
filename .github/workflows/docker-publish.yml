@@ -33,4 +33,4 @@ jobs:
         run: docker build -t chesar/nest-demo-k8s:$TAG .
 
       - name: Push Docker image
-        run: docker push chesar/nest-demo-k8:$TAG
+        run: docker push chesar/nest-demo-k8s:$TAG
