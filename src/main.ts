@@ -143,10 +143,10 @@ async function bootstrap() {
     }
   `;
   const customSiteTitle = "Nest Demo";
-  const customfavIcon = "https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg"
-
+/*   const customfavIcon = "https://upload.wikimedia.org/wikipedia/commons/a/a8/NestJS.svg"
+ */
   const document = SwaggerModule.createDocument(app, swaggerConfig);
-  SwaggerModule.setup('api', app, document, { customCss, customSiteTitle, customfavIcon });
+  SwaggerModule.setup('api', app, document, { customCss, customSiteTitle });
 
   await app.listen(process.env.PORT ?? 3000);
 
