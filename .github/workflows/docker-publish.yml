@@ -30,7 +30,7 @@ jobs:
           echo "TAG=$VERSION" >> $GITHUB_ENV
 
       - name: Build Docker image
-        run: docker build -t your-dockerhub-username/your-app-name:$TAG .
+        run: docker build -t chesar/nest-demo-k8s:$TAG .
 
       - name: Push Docker image
-        run: docker push your-dockerhub-username/your-app-name:$TAG
+        run: docker push chesar/nest-demo-k8:$TAG
