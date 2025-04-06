@@ -11,7 +11,7 @@ export class LoggerMiddleware implements NestMiddleware {
     next();
   }
 }
-
+ 
 export function loggerGlobal(req: Request, res: Response, next: NextFunction) {
     const currentDate = new Date().toISOString().split('T')[0]; 
     console.log(`[${currentDate}] Estás ejecutando un método ${req.method} en la ruta ${req.url}`);
